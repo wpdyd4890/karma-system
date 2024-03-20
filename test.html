@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>JYNAM'S #N HINT</title>
+    </head>
+    <script language="javascript">
+    function random_img(){
+    num=Math.floor(Math.random()*5);//다섯개 이상의 파일을 출력하려면 5를 해당숫자로 수정.
+    document.randomImage.src="scott"+num+".jpg";
+    }
+    </script>
+<!--스크립트끝: 스크립트부분을 <head></head>사이에 추가합니다.-->
+    <body>
+    <img name="randomImage">
+    <script>
+    random_img(); //위의 이미지태그 아래쪽에 반드시 추가
+    </script>
+    </body>
+    </html>
